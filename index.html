@@ -11,32 +11,32 @@
     <title>Platziconf Hawai</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="60">
 
     <!--Header-->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">    
         <a class="navbar-brand" href="#">
           <img src="assets/images/platzi-logo.png" alt="PlatziLogo">
           Conf Hawai
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
       
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">La Conferencia</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#main">La Conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link" href="#speakers">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Lugar y Fecha</a>
+              <a class="nav-link" href="#place-time">Lugar y Fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conviertete en orador</a>
+              <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-platzi" href="#">Comprar Tikets</a>
@@ -64,11 +64,11 @@
             <div class="container">
               <div class="row align-items-center">
                 <div class="col-md-6 offset-md-6 text-center text-md-right">
-                  <h1>Platziconf Hawai</h1>
+                  <h1><abbr data-toggle="tooltip" title="Evento anual de Platzi">Platziconf</abbr> Hawai</h1>
                   <p class="d-none d-md-block">Platzi conf por primera vez en Hawai, un evento para compartir con la comunidad
                     el conocimiento y experiencia de los expertos que crean
                     el futuro de internet.
-                    Ven a concer a miembros del team platzi,
+                    Ven a concer a miembros del team <abbr data-toggle="tooltip" title="La mayor escuela de eduacion online efectiva">Platzi</abbr>,
                     a otros estudiantes de platzi y a los oradores de primer nivel que tenemos para ti.
                     Te esperamos.
                   </p>
@@ -157,6 +157,7 @@
       </div>
     </section>
     <!--/Speakers-->
+
     <!--Lugar y Fecha-->
     <section id="place-time">
       <div class="container-fluid">
@@ -188,7 +189,7 @@
         </div>
         <div class="row">
           <div class="col text-center">
-            Anotate como orador para dar una charla ignite.
+            Anotate como orador para dar una <abbr data-toggle="tooltip" title="Charlas de 5 minutos">charla ignite</abbr>.
             Cuentanos de que quieres hablar
           </div>
         </div>
@@ -257,5 +258,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
